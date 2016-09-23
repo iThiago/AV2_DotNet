@@ -9,7 +9,8 @@ namespace Domain.Entities
     public  class AutoInfracao
     {
         public int AutoInfracaoId { get; set; }
-        public Processo Processo { get; set; }
+        public virtual Processo Processo { get; set; }
+        public long ProcessoId { get; set; }
         public int Gravidade { get; set; }
         public bool Atenuante { get; set; }
         public bool Agravante { get; set; }

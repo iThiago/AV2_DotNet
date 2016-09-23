@@ -77,6 +77,16 @@ namespace Lilianne_Lameira_AV1.App_Start
             kernel.Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
             kernel.Bind<IProfuctRepository>().To<ProductRepository>();
 
+
+            kernel.Bind(typeof(IAppServiceBase<>)).To(typeof(AppServiceBase<>));
+            kernel.Bind<IFornecedorAppService>().To<FornecedorAppService>();
+
+            kernel.Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
+            kernel.Bind<IFornecedorService>().To<FornecedorService>();
+
+            kernel.Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
+            kernel.Bind<IFornecedorRepository>().To<FornecedorRepository>();
+
         }
     }
 }

@@ -217,12 +217,22 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FornecedorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609231723172_av2.cs" />
+    <Compile Include="Migrations\201609231723172_av2.Designer.cs">
+      <DependentUpon>201609231723172_av2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609231814452_av2_v2.cs" />
+    <Compile Include="Migrations\201609231814452_av2_v2.Designer.cs">
+      <DependentUpon>201609231814452_av2_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -241,6 +251,8 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.route.min.js" />
     <Content Include="Scripts\App\app.js" />
+    <Content Include="Scripts\App\fornecedor\controllers\FornecedorController.js" />
+    <Content Include="Scripts\App\fornecedor\views\addFornecedor.html" />
     <Content Include="Scripts\App\product\controllers\addProductController.js" />
     <Content Include="Scripts\App\product\views\add.html" />
     <Content Include="Scripts\bootstrap.js" />
@@ -322,6 +334,14 @@
       <Project>{9fa66458-0fe5-4a8e-a839-528e3b6f865c}</Project>
       <Name>04Persistence</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201609231723172_av2.resx">
+      <DependentUpon>201609231723172_av2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609231814452_av2_v2.resx">
+      <DependentUpon>201609231814452_av2_v2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -17,7 +17,7 @@ namespace Lilianne_Lameira_AV1.Controllers
             _FornecedorApp = FornecedorApp;
         }
 
-        [HttpPost][HttpGet]
+        [HttpPost]
         public void SaveFornecedor(Fornecedor Fornecedor)
         {
             _FornecedorApp.Add(Fornecedor);

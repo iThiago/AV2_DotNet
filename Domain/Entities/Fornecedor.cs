@@ -12,8 +12,9 @@ namespace Domain.Entities
         public string Cnpj { get; set; }
         public string RazaoSocial { get; set; }
         public string InscricaoMunicipal { get; set; }
-        public int ReceitaBruta { get; set; }
-        public List<Endereco> Endereco { get; set; }
-        public List<Processo> Processos { get; set; }
+        public Decimal ReceitaBruta { get; set; }
+        public virtual List<Product> Produtos { get; set; }
+        public virtual List<Endereco> Enderecos { get; set; }
+        public virtual List<Processo> Processos { get; set; }
     }
 }

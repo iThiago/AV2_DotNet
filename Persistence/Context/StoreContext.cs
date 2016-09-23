@@ -13,6 +13,7 @@ namespace Persistence.Context
     {
         public StoreContext() : base("Store")
         {
+
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -24,8 +25,10 @@ namespace Persistence.Context
             modelBuilder.Properties().Where(p => p.Name == p.ReflectedType.Name + "Id").Configure(p => p.IsKey());
             modelBuilder.Properties<String>().Configure(p => p.HasColumnType("varchar"));
             modelBuilder.Properties<String>().Configure(p => p.HasMaxLength(100));
-            
+
             modelBuilder.Configurations.Add(new ProductConfiguration());
+            //modelBuilder.Configurations.Add(new FornecedorConfiguration());
+
         }
     }
 }

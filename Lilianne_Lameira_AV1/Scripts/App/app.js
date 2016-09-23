@@ -11,6 +11,9 @@ app.config([
             when('/adicionar/produto', {
                 templateUrl: 'Scripts/App/product/views/add.html',
                 controller: 'AddProductController'
+            }).when('/adicionar/fornecedor', {
+                templateUrl: 'Scripts/App/fornecedor/views/addFornecedor.html',
+                controller: 'FornecedorController'
             }).
             when('/', {
                 templateUrl: 'Scripts/App/home.html'
