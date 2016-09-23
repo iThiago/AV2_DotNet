@@ -48,7 +48,13 @@
   <ItemGroup>
     <Compile Include="AppServiceBase.cs" />
     <Compile Include="Interfaces\IAppServiceBase.cs" />
+    <Compile Include="Interfaces\IAutoInfracaoAppService.cs" />
+    <Compile Include="Interfaces\IFornecedorAppService.cs" />
+    <Compile Include="Interfaces\IProcessoAppService.cs" />
     <Compile Include="Interfaces\IProductAppService.cs" />
+    <Compile Include="AutoInfracaoAppService.cs" />
+    <Compile Include="FornecedorAppService.cs" />
+    <Compile Include="ProcessoAppService.cs" />
     <Compile Include="ProductAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

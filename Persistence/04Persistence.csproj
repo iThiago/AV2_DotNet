@@ -59,6 +59,9 @@
     <Compile Include="EntityConfiguration\ProductConfiguration.cs" />
     <Compile Include="Migration\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AutoInfracaoRepository.cs" />
+    <Compile Include="Repositories\ProcessoRepository.cs" />
+    <Compile Include="Repositories\FornecedorRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
   </ItemGroup>
