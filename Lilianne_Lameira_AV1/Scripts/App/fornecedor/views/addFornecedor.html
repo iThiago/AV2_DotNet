@@ -1,0 +1,27 @@
+﻿
+<div class="CadastroFornecedor">
+    <h2>Cadastro Fornecedor</h2>
+
+    <div class="form-group">
+        <label>Razão Social:</label>
+        <input type="text" class="form-control" id="input_name" ng-model="RazaoSocial" required />
+    </div>
+    <div class="form-group">
+        <label>Cnpj:</label>
+        <input type="text" class="form-control" id="input_cpf" ng-model="Cnpj" />
+    </div>
+    <div class="form-group">
+        <label>Inscrição Municipal:</label>
+        <input type="text" class="form-control" id="input_adress" ng-model="InscricaoMunicipal" />
+    </div>
+    <div class="form-group">
+        <label>Receita Bruta:</label>
+        <input type="text" class="form-control" id="input_adress" ng-model="ReceitaBruta" required />
+    </div>
+    <div class="form-group">
+        <label>Unidade Federativa</label>
+        <input type="text" class="form-control" id="input_adress" ng-model="UnidadeFederativa" />
+    </div>
+
+    <input class="btn btn-success" type="button" ng-click="save()" value="Enviar" />
+</div>
